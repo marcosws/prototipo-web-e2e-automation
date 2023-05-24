@@ -12,8 +12,8 @@ import static io.cucumber.junit.platform.engine.Constants.FILTER_TAGS_PROPERTY_N
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("features")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
+@SelectClasspathResource("features") 
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:target/cucumber.html, json:target/cucumber.json")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.github.marcosws.prototipoweb") 
 @ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@global")
 public class TestSuite {
