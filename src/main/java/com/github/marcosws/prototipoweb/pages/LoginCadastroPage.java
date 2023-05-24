@@ -9,7 +9,8 @@ import com.github.marcosws.prototipoweb.core.DriverFactory;
 
 public class LoginCadastroPage extends BasePage {
 	
-	
+	@FindBy(xpath="//*[@id=\"container\"]/h1")
+	private WebElement labelTituloLoginCadastroDeCliente;
 	
 	@FindBy(id="login")
 	private WebElement campoNome;
@@ -31,6 +32,10 @@ public class LoginCadastroPage extends BasePage {
 	
 	public void validarTituloLoginCadastroDeCliente() {
 		this.validateTitle("Login : Cadastro de Cliente");
+	}
+	
+	public void validarLabelLoginCadastroDeCliente() {
+		this.validateTextElement(labelTituloLoginCadastroDeCliente, "Login - Cadastro de Cliente");
 	}
 	
 	public void editarCampoNome(String nome) {

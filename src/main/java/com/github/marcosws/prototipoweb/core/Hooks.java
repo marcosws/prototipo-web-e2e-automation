@@ -12,15 +12,19 @@ public class Hooks {
 	
 	@Before
 	public void beforeScenario() {
+		
 		DriverFactory.setDriver(Browser.CHROME);
 		DriverFactory.getDriver().manage().window().maximize();
 		DriverFactory.getDriver().get(Consts.WEB_APPLICATION);
-		DriverFactory.getDriver().manage().timeouts().implicitlyWait(Duration.ofMinutes(7));
+		DriverFactory.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+		
 	}
 	
 	@After
 	public void afterScenario() {
+		
 		DriverFactory.quitDriver();
+		
 	}
 	
 	
