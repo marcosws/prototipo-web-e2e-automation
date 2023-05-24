@@ -17,13 +17,6 @@
   </properties>
 
   <dependencies>
-	<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-	<dependency>
-	    <groupId>org.junit.jupiter</groupId>
-	    <artifactId>junit-jupiter-api</artifactId>
-	    <version>5.9.0</version>
-	    <scope>test</scope>
-	</dependency>
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
@@ -34,7 +27,34 @@
 	<dependency>
 	    <groupId>io.cucumber</groupId>
 	    <artifactId>cucumber-java</artifactId>
-	    <version>7.12.0</version>
+	    <version>7.11.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit-platform-engine -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-junit-platform-engine</artifactId>
+	    <version>7.11.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
+	<dependency>
+	    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-engine</artifactId>
+	    <version>1.9.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite -->
+	<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite -->
+	<dependency>
+	    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-suite</artifactId>
+	    <version>1.9.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+	<dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter</artifactId>
+		<version>5.9.2</version>
 	</dependency>
   </dependencies>
+ 
+  
 </project>
